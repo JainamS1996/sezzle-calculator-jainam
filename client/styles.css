@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("sezzle.png");
+  background-size: 100%;
+
+
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+  transition: all 1s;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(31, 28, 28, 0.9);
+  transform: scale(1.08);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(112, 91, 91, 0.205);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.logger-grid {
+  float: center;
+  display: grid;
+  justify-content: left;
+  align-content: left;
+  background-color: rgba(153, 30, 235, 0.74);
+  min-height: 20vh;
+  display: flex;
+  word-wrap: break-word;
+  word-break: break-all;
+  grid-template-columns: (1, 20px);
+  grid-template-rows: (1, 20px);
+  color: white;
+  font-size: 18px;
+}
