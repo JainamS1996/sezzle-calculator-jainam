@@ -1,12 +1,14 @@
 # Sezzle Calculator Jainam
 
 ### A web application to do real time calculations and allow other users to view the last 10 calculations.
+
+<b>View the live calculator on Heroku at:</b> https://guarded-escarpment-76776.herokuapp.com/ 
+
 ---
 ### Features
 1. Perform basic calculations such as addition, subtraction, multiplication and division of integers,float,negative and non-negative numbers
 2. Across all tabs/windows view the calculated results in real time.
 3. Only displaying the last 10 entries
-<b>View the live calculator on Heroku at:</b> [Calculator](https://guarded-escarpment-76776.herokuapp.com/)
 ---
 <p><b> FrontEnd:</b> HTML,CSS and JavaScript</p>
 <p><b> BackEnd:</b> Express</p>
